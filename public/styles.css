@@ -1,0 +1,197 @@
+/* Body styling for centering content and setting background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Container styling for the main content area */
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Header styling */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Form styling for website input */
+#websiteForm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+#websiteInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+/* Button styling for form submission */
+#websiteForm button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+#websiteForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for results header and rows */
+.results-header, .results-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 100px; /* Ensure consistent column sizes */
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Results header styling */
+.results-header {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Results row styling */
+.results-row {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Remove border for the last results row */
+.results-row:last-child {
+    border-bottom: none;
+}
+
+/* Column header and content alignment */
+.header-website, .header-status, .website-column, .status-column, .remove-column {
+    text-align: center;
+}
+
+/* Left-align the history header */
+.header-history {
+    text-align: left;
+}
+
+/* Left-align the history column */
+.history-column {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Add padding to the remove column header */
+.header-remove {
+    padding: 0 20px;
+}
+
+/* Results container styling */
+#results {
+    margin-top: 10px;
+}
+
+/* Link styling within results */
+#results a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Link hover effect */
+#results a:hover {
+    text-decoration: underline;
+}
+
+/* Status column styling */
+.status-column {
+    font-weight: bold;
+}
+
+/* Online status color */
+.status-column.online {
+    color: green;
+}
+
+/* Offline status color */
+.status-column.offline {
+    color: red;
+}
+
+/* History dot styling */
+.history-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* Online history dot color */
+.history-dot.online {
+    background-color: green;
+}
+
+/* Offline history dot color */
+.history-dot.offline {
+    background-color: red;
+}
+
+/* Tooltip styling */
+.history-dot::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 125%; /* Position above the dot */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Tooltip hover effect */
+.history-dot:hover::after {
+    opacity: 1;
+}
+
+/* Button styling within results row */
+.results-row button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect within results row */
+.results-row button:hover {
+    background-color: #c82333;
+}

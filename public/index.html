@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Status</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello Angie</h1>
+        <!-- Form to add a new website -->
+        <form id="websiteForm">
+            <input type="url" id="websiteInput" placeholder="Enter website URL" required>
+            <button type="submit">Add Website</button>
+        </form>
+        <div class="results-header">
+            <div class="header-website">Website</div>
+            <div class="header-status">Status</div>
+            <div class="header-history">History</div>
+            <div class="header-remove"></div> <!-- Empty header for Remove button column -->
+        </div>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        // Format timestamp to a readable format
+        function formatTimestamp(timestamp) {
+            const date = new Date(timestamp);
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                hour12: true
+            };
+            return date.toLocaleString('en-US', options);
+        }
+
+        // Fetch the status history and update the UI
+        async function fetchStatus() {
+            const response = await fetch('/check-status');
+            const statusHistory = await response.json();
+            const resultsList = document.getElementById('results');
+            resultsList.innerHTML = '';
+            Object.keys(statusHistory).forEach(url => {
+                const history = statusHistory[url];
+                const latestStatus = history[history.length - 1];
+                const row = document.createElement('div');
+                row.className = 'results-row';
+                const link = document.createElement('a');
+                link.href = url;
+                link.target = '_blank';
+                link.textContent = new URL(url).hostname;
+                const websiteDiv = document.createElement('div');
+                websiteDiv.className = 'website-column';
+                websiteDiv.appendChild(link);
+                const statusText = latestStatus.status === 200 ? 'Online!' : 'Offline!';
+                const statusDiv = document.createElement('div');
+                statusDiv.className = `status-column ${latestStatus.status === 200 ? 'online' : 'offline'}`;
+                statusDiv.textContent = statusText;
+                const historyDiv = document.createElement('div');
+                historyDiv.className = 'history-column';
+                history.forEach(h => {
+                    const dot = document.createElement('div');
+                    dot.className = `history-dot ${h.status === 200 ? 'online' : 'offline'}`;
+                    dot.title = formatTimestamp(h.timestamp); // Format timestamp for tooltip
+                    historyDiv.appendChild(dot);
+                });
+                row.appendChild(websiteDiv);
+                row.appendChild(statusDiv);
+                row.appendChild(historyDiv);
+                const removeButtonDiv = document.createElement('div');
+                removeButtonDiv.className = 'remove-column';
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Remove';
+                removeButton.onclick = async () => {
+                    await fetch('/websites', {
+                        method: 'DELETE',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ url })
+                    });
+                    fetchWebsites();
+                };
+                removeButtonDiv.appendChild(removeButton);
+                row.appendChild(removeButtonDiv);
+                resultsList.appendChild(row);
+            });
+        }
+
+        // Fetch the list of websites and update the UI
+        async function fetchWebsites() {
+            const response = await fetch('/websites');
+            const websites = await response.json();
+            const resultsList = document.getElementById('results');
+            resultsList.innerHTML = '';
+            websites.forEach(url => {
+                const row = document.createElement('div');
+                row.className = 'results-row';
+                const link = document.createElement('a');
+                link.href = url;
+                link.target = '_blank';
+                link.textContent = new URL(url).hostname;
+                const websiteDiv = document.createElement('div');
+                websiteDiv.className = 'website-column';
+                websiteDiv.appendChild(link);
+                const statusDiv = document.createElement('div');
+                statusDiv.className = 'status-column';
+                statusDiv.textContent = 'Checking...';
+                const historyDiv = document.createElement('div');
+                historyDiv.className = 'history-column';
+                row.appendChild(websiteDiv);
+                row.appendChild(statusDiv);
+                row.appendChild(historyDiv);
+                const removeButtonDiv = document.createElement('div');
+                removeButtonDiv.className = 'remove-column';
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Remove';
+                removeButton.onclick = async () => {
+                    await fetch('/websites', {
+                        method: 'DELETE',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ url })
+                    });
+                    fetchWebsites();
+                };
+                removeButtonDiv.appendChild(removeButton);
+                row.appendChild(removeButtonDiv);
+                resultsList.appendChild(row);
+            });
+            fetchStatus(); // Fetch status after fetching websites
+        }
+
+        // Handle form submission to add a new website
+        document.getElementById('websiteForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const websiteInput = document.getElementById('websiteInput');
+            const url = websiteInput.value;
+            await fetch('/websites', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ url })
+            });
+            websiteInput.value = '';
+            fetchWebsites();
+        });
+
+        // Fetch websites and status immediately on page load
+        fetchWebsites();
+
+        // Periodically fetch status every 5 minutes
+        setInterval(fetchStatus, 5 * 60 * 1000);
+    </script>
+</body>
+</html>

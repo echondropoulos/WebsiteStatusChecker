@@ -1,0 +1,405 @@
+{
+  "https://www.google.com": [
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:07:07.707Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:08:07.477Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:08:07.675Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:09:07.734Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:10:07.741Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:11:07.734Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:12:07.737Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:13:07.733Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:14:07.741Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:15:07.985Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:16:07.769Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:17:07.753Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:18:48.393Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:19:48.401Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:20:48.412Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:21:48.410Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:22:48.437Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:23:48.432Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:24:48.450Z"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:25:48.448Z"
+    }
+  ],
+  "https://www.microsoft.com": [
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:07:09.913Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:08:07.626Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:08:07.827Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:09:08.220Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:10:08.023Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:11:08.811Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:12:08.373Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:13:08.076Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:14:08.853Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:15:09.093Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:16:08.486Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:17:08.766Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:18:50.132Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:19:48.889Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:20:49.648Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:21:49.872Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:22:49.578Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:23:49.657Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:24:49.331Z"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:25:49.826Z"
+    }
+  ],
+  "https://www.apple.com": [
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:07:07.706Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:08:07.503Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:08:07.682Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:09:07.785Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:10:07.761Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:11:07.767Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:12:07.803Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:13:07.767Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:14:07.805Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:15:07.786Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:16:07.860Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:17:07.793Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:18:48.467Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:19:48.421Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:20:48.427Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:21:48.422Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:22:48.434Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:23:48.457Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:24:48.471Z"
+    },
+    {
+      "url": "https://www.apple.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:25:49.393Z"
+    }
+  ],
+  "https://www.github.com": [
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:08:07.924Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:08:07.951Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:09:08.139Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:10:08.133Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:11:07.989Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:12:08.199Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:13:08.209Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:14:08.183Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:15:08.222Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:16:08.194Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:17:08.215Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:18:48.826Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:19:48.809Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:20:48.831Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:21:48.893Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:22:48.839Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:23:48.854Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:24:48.873Z"
+    },
+    {
+      "url": "https://www.github.com",
+      "status": 200,
+      "timestamp": "2025-01-26T03:25:48.826Z"
+    }
+  ]
+}
