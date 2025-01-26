@@ -4,3 +4,4 @@ This project is a simple tool to check the status of websites. It sends HTTP req
 
 # Preview
 
+![Alt text](/Preview.png?raw=true "Preview Image")
